@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "anisoc",
+  "version": "${version}",
+  "name": "Anisoc Mod",
+  "description": "Patches for the anisoc modpack",
+  "authors": [
+    "BravelyPeculiar"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/anisoc/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.bravelypeculiar.anisoc.client.AnisocModClient"
+    ],
+    "main": [
+      "com.github.bravelypeculiar.anisoc.AnisocMod"
+    ]
+  },
+  "mixins": [
+    "anisoc.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
